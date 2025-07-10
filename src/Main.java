@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static final BibliotecaRepositorio repositorio = new MemoriaRepositorio();
+    private static final BibliotecaRepositorio repositorio = MemoriaRepositorio.getInstancia();
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
