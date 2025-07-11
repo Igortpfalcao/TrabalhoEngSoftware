@@ -1,9 +1,9 @@
-package main.java.com.biblioteca.modelos;
+package modelos;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.com.biblioteca.enums.TipoUsuario;
+import enums.TipoUsuario;
 
 public abstract class Usuario {
     private int codigo;
@@ -39,6 +39,7 @@ public abstract class Usuario {
     public void adicionarEmprestimo(Emprestimo emprestimo) {
         this.emprestimosAtivos.add(emprestimo);
     }
+    public int getQntdEmprestimos(){ return qntdEmprestimos;}
     
     public List<Emprestimo> getEmprestimosAtivos() {
         return new ArrayList<>(emprestimosAtivos); // Retorna cópia para evitar modificações externas
