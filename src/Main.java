@@ -1,7 +1,16 @@
-package main.java.com.biblioteca;
-
-import comandos.*;
 import java.util.Scanner;
+
+import comandos.ConsultarLivroComando;
+import comandos.ConsultarNotificacoesComando;
+import comandos.ConsultarUsuarioComando;
+import comandos.DevolucaoComando;
+import comandos.EmprestimoComando;
+import comandos.ExecutorDeComandos;
+import comandos.ObservadorComando;
+import comandos.ReservaComando;
+import repositorio.Cadastro;
+import repositorio.MemoriaRepositorio;
+import repositorio.SistemaBiblioteca;
 
 public class Main {
     private static final SistemaBiblioteca sistema = new SistemaBiblioteca(MemoriaRepositorio.getInstancia());
@@ -15,7 +24,15 @@ public class Main {
         registrarComandos();
 
         System.out.println("\n=== SISTEMA BIBLIOTECA ===");
-        System.out.println("Digite comandos ou 'sai' para encerrar.");
+        System.out.println("Comandos disponíveis:");
+        System.out.println("  emp <usuário> <livro>    - Realizar empréstimo");
+        System.out.println("  dev <usuário> <livro>    - Realizar devolução");
+        System.out.println("  res <usuário> <livro>    - Fazer reserva");
+        System.out.println("  obs <usuário> <livro>    - Fazer observação");
+        System.out.println("  liv <livro>              - Informações do Livro");
+        System.out.println("  usu <usuario>            - Informações do Usuario");
+        System.out.println("  ntf <usuario>            - Notificações do Usuario");
+        System.out.println("  sai                      - Sair do sistema");
 
         while (true) {
             System.out.print("\n> ");
