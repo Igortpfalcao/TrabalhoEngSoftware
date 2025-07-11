@@ -1,4 +1,4 @@
-package main.java.com.biblioteca.enums;
+package enums;
 
 public enum StatusExemplar {
     DISPONIVEL("Disponível para empréstimo"),
