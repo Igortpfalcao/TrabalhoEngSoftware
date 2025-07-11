@@ -1,7 +1,8 @@
-package main.java.com.biblioteca.modelos;
+package modelos;
 
 import java.time.LocalDate;
-import main.java.com.biblioteca.enums.StatusEmprestimo;
+
+import enums.StatusEmprestimo;
 
 public class Emprestimo {
     private int codigo;
