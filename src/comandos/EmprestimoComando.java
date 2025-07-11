@@ -1,6 +1,6 @@
 package comandos;
 
-import main.java.com.biblioteca.SistemaBiblioteca;
+import repositorio.SistemaBiblioteca;
 
 public class EmprestimoComando implements Comando {
     private final SistemaBiblioteca sistema;
