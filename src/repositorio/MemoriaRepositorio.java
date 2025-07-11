@@ -1,10 +1,4 @@
-package main.java.com.biblioteca.repositorio;
-
-import main.java.com.biblioteca.enums.StatusEmprestimo;
-import main.java.com.biblioteca.enums.StatusExemplar;
-import main.java.com.biblioteca.modelos.*;
-import main.java.com.biblioteca.observer.LivroObservable;
-import main.java.com.biblioteca.observer.Observer;
+package repositorio;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -12,6 +6,16 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+
+import enums.StatusEmprestimo;
+import enums.StatusExemplar;
+import modelos.Emprestimo;
+import modelos.Exemplar;
+import modelos.Livro;
+import modelos.Reserva;
+import modelos.Usuario;
+import observer.LivroObservable;
+import observer.Observer;
 
 public class MemoriaRepositorio implements BibliotecaRepositorio {
     private static MemoriaRepositorio instancia;
@@ -210,4 +214,5 @@ public int getTotalNotificacoes(Usuario usuario) {
         }
         return instancia;
     }
+
 }
