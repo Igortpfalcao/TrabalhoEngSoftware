@@ -1,7 +1,11 @@
-package main.java.com.biblioteca.repositorio;
+package repositorio;
 
-import main.java.com.biblioteca.enums.StatusExemplar;
-import main.java.com.biblioteca.modelos.*;
+import enums.StatusExemplar;
+import modelos.AlunoGraduacao;
+import modelos.AlunoPosGraduacao;
+import modelos.Exemplar;
+import modelos.Livro;
+import modelos.Professor;
 
 public class Cadastro {
 
@@ -45,6 +49,7 @@ public class Cadastro {
         repository.salvarUsuario(new AlunoGraduacao(789, "Pedro Paulo", null));
         repository.salvarUsuario(new AlunoPosGraduacao(456, "Luiz Fernando Rodrigues", null));
         repository.salvarUsuario(new Professor(100, "Carlos Lucena"));
+        repository.salvarUsuario(new AlunoGraduacao(26,"Andréa Dias", null));
         
         System.out.println("Usuários cadastrados com sucesso!");
     }
