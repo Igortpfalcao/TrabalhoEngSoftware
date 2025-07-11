@@ -1,7 +1,6 @@
-package main.java.com.biblioteca.modelos;
+package modelos;
 
-import main.java.com.biblioteca.enums.StatusExemplar;
-import main.java.com.biblioteca.modelos.Usuario;
+import enums.StatusExemplar;
 
 public class Exemplar {
     private Livro livro;
