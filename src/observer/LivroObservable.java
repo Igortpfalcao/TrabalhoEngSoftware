@@ -1,9 +1,9 @@
-package main.java.com.biblioteca.observer;
+package observer;
 
-import main.java.com.biblioteca.modelos.Livro;
-import main.java.com.biblioteca.modelos.Usuario;
 import java.util.ArrayList;
 import java.util.List;
+
+import modelos.Livro;
 
 public class LivroObservable {
     private Livro livro;
