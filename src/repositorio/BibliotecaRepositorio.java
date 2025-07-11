@@ -1,16 +1,14 @@
-package main.java.com.biblioteca.repositorio;
+package repositorio;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import main.java.com.biblioteca.modelos.Emprestimo;
-import main.java.com.biblioteca.modelos.Exemplar;
-import main.java.com.biblioteca.modelos.Livro;
-import main.java.com.biblioteca.modelos.Reserva;
-import main.java.com.biblioteca.modelos.Usuario;
-import main.java.com.biblioteca.observer.LivroObservable;
-import main.java.com.biblioteca.observer.Observer;
+import modelos.Emprestimo;
+import modelos.Exemplar;
+import modelos.Livro;
+import modelos.Reserva;
+import modelos.Usuario;
+import observer.LivroObservable;
+import observer.Observer;
 
 public interface BibliotecaRepositorio {
     // Usuários
