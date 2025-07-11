@@ -1,17 +1,13 @@
-package main.java.com.biblioteca.observer;
+package observer;
 
-import main.java.com.biblioteca.enums.TipoUsuario;
-import main.java.com.biblioteca.modelos.Livro;
-import main.java.com.biblioteca.modelos.Usuario;
+import modelos.Livro;
+import modelos.Usuario;
 
 public class ProfessorObserver implements Observer {
     private Usuario professor;
     private int contadorNotificacoes = 0;
 
     public ProfessorObserver(Usuario professor) {
-        if (!professor.getTipo().equals(TipoUsuario.PROFESSOR)) {
-            throw new IllegalArgumentException("Apenas professores podem ser observadores");
-        }
         this.professor = professor;
     }
 
@@ -26,4 +22,5 @@ public class ProfessorObserver implements Observer {
     public int getContadorNotificacoes() {
         return contadorNotificacoes;
     }
+
 }
