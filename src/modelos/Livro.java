@@ -1,4 +1,5 @@
-package main.java.com.biblioteca.modelos;
+package modelos;
+
 
 public class Livro {
     private int codigo;
@@ -28,6 +29,7 @@ public class Livro {
     public String getAutores(){ return autores; }
     public int getAnoPublicacao(){ return anoPublicacao;}
     public String getEdicao(){ return edicao; }
+    public String getEditora(){ return editora;}
     
     
     public void setEmprestado(boolean emprestado) { 
