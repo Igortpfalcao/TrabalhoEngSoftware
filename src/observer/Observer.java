@@ -1,6 +1,6 @@
-package main.java.com.biblioteca.observer;
+package observer;
 
-import main.java.com.biblioteca.modelos.Livro;
+import modelos.Livro;
 
 public interface Observer {
     void atualizar(Livro livro);
