@@ -1,6 +1,6 @@
-package main.java.com.biblioteca.modelos;
+package modelos;
 
-import main.java.com.biblioteca.enums.TipoUsuario;
+import enums.TipoUsuario;
 
 public class AlunoPosGraduacao extends Usuario {
     
