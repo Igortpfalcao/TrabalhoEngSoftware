@@ -1,4 +1,4 @@
-package main.java.com.biblioteca.enums;
+package enums;
 
 public enum TipoUsuario {
     ALUNO_GRADUACAO(2, 4),    // Limite: 2 livros
