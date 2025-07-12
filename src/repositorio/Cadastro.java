@@ -49,7 +49,6 @@ public class Cadastro {
         repository.salvarUsuario(new AlunoGraduacao(789, "Pedro Paulo", null));
         repository.salvarUsuario(new AlunoPosGraduacao(456, "Luiz Fernando Rodrigues", null));
         repository.salvarUsuario(new Professor(100, "Carlos Lucena"));
-        repository.salvarUsuario(new AlunoGraduacao(26,"Andréa Dias", null));
         
         System.out.println("Usuários cadastrados com sucesso!");
     }
