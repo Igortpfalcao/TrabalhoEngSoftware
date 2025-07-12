@@ -1,9 +1,51 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0" version="27.0.5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0" version="28.0.4">
   <diagram name="Página-1" id="JpT5tW9z2s_yWFVb0rja">
-    <mxGraphModel>
+    <mxGraphModel dx="2048" dy="628" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="tRzsLMZIChmyYw6vbyii-5" value="&lt;div&gt;«interface»&lt;/div&gt;&lt;div&gt;&lt;b&gt;Observer&lt;/b&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="71.5" y="60" width="123" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-12" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="tRzsLMZIChmyYw6vbyii-7" target="tRzsLMZIChmyYw6vbyii-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-7" value="+atualizar(Livro): void" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71.5" y="111" width="123" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-8" value="ProfessorObserver" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="53" y="218" width="160" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-9" value="&lt;div&gt;+ professor: Usuario&lt;/div&gt;&lt;div&gt;+ contadorNotificacoes: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="tRzsLMZIChmyYw6vbyii-8">
+          <mxGeometry y="26" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="tRzsLMZIChmyYw6vbyii-8">
+          <mxGeometry y="66" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-11" value="+ atualizar(Livro): Void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="tRzsLMZIChmyYw6vbyii-8">
+          <mxGeometry y="74" width="160" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-13" value="Livro" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-419" y="78" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-18" value="LivroObservable" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="80" width="216" height="169" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-19" value="- livro: Livro&lt;br&gt;- observers: List&amp;lt;Observer&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="tRzsLMZIChmyYw6vbyii-18">
+          <mxGeometry y="26" width="216" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-20" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="tRzsLMZIChmyYw6vbyii-18">
+          <mxGeometry y="66" width="216" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-21" value="+ registrarObserver(o: Observer): void&lt;br&gt;+ removerObserver(o: Observer): void&lt;br&gt;+ notificarObservers(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="tRzsLMZIChmyYw6vbyii-18">
+          <mxGeometry y="74" width="216" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-22" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.004;entryY=0.006;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="tRzsLMZIChmyYw6vbyii-13" target="tRzsLMZIChmyYw6vbyii-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tRzsLMZIChmyYw6vbyii-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="tRzsLMZIChmyYw6vbyii-19" target="tRzsLMZIChmyYw6vbyii-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
